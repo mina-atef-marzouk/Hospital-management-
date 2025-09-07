@@ -1,0 +1,409 @@
+
+.containerr {
+    max-width: 900px;
+    margin: 100px auto;  /* Added 100px margin-top to push it below the navbar */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* No Appointments Message */
+.no-appointments {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/*=============== CUSTOM STYLES ===============*/
+/* Translate Dropdown */
+.custom-translate select {
+  padding: 10px;
+  border-radius: 60px;
+  border: 2px double #283618;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
+  display: none;
+}
+
+
+.confirm-btn , .decline-btn{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+
+
+/*=============== prescriptionpage ===============*/
+/* General container styling */
+/* General container styling */
+/* General container styling */
+.containerdiv {
+    height: 80%;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 160px;
+    margin-left: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Heading styling */
+h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Style for the patient list */
+.patient-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Styling for individual patient cards */
+.patient-card {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%; /* Make sure the card takes full width */
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px; /* Space between the cards */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Hover effect for patient cards */
+.patient-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the patient name */
+.patient-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4169e1; /* Blue color */
+    margin-bottom: 10px;
+}
+
+/* Styling for each information section inside the card */
+.patient-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Ensure the cards look good on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .patient-list {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+/* Styling for the Search Container */
+.search-container {
+    margin-bottom: 90px;;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Search Input Styling */
+.search-input {
+    margin-bottom: 60px;;
+
+    width: 100%;
+    max-width: 400px;  /* You can adjust this as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px; /* Space between the input and button */
+}
+
+/* Focused State for Search Input */
+.search-input:focus {
+    border-color: #4169e1;  /* Blue border when focused */
+    box-shadow: 0 0 5px rgba(65, 105, 225, 0.5); /* Light blue shadow on focus */
+    outline: none;  /* Remove default outline */
+}
+
+/* Search Button Styling */
+.search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4169e1;  /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.search-button:hover {
+    background-color: #3658b8;  /* Darker blue on hover */
+}
+
+/* Style for no patients found */
+.no-results {
+    color: #d9534f; /* Red color */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.prescribe-button {
+    position:relative;
+    bottom: 20px; /* Aligns the button to the bottom of the card */
+    left: 85%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.prescribe-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/*prescription form*/
+/* Add some spacing and center the form */
+.prescription-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.prescription-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling the form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button Styling */
+.prescription-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.prescription-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Success/Error message styles */
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/* General overlay styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure overlay appears on top */
+}
+
+/* Popup styling */
+.popupAddAppo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+}
+
+/* Form styling */
+.sub-table {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+.prescription-submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.prescription-submit-button:hover {
+    background-color: #0056b3;
+}

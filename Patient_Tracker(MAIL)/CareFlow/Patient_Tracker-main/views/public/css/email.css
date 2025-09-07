@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #eaf6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container h1 {
+    color: #1b4965;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container form label {
+    color: #1b4965;
+    font-weight: 500;
+}
+
+.container form input,
+.container form textarea,
+.container form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #89c2d9;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #1b4965;
+    background: #f0faff;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container form input::placeholder,
+.container form textarea::placeholder {
+    color: #89c2d9;
+}
+
+.container form input:focus,
+.container form textarea:focus,
+.container form select:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+.container form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.container form select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.container form button {
+    border: none;
+    background: #1b4965;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container form button:hover {
+    background: #0077b6;
+    transform: translateY(-2px);
+}
+
+.container form button:active {
+    transform: translateY(0);
+}
+
+.container form .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container form .button-group button {
+    width: 48%; /* Ensures the buttons take up equal width */
+}
+
+/* Horizontal line style */
+hr {
+    border: 0;
+    border-top: 2px solid #0077b6;
+    margin: 30px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container form {
+        gap: 15px;
+    }
+
+    .container form button {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .container form .button-group {
+        flex-direction: column;
+    }
+
+    .container form .button-group button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

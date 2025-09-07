@@ -1,0 +1,39 @@
+
+.form-container {
+   position: fixed;
+   top: 70px;
+   left:40%;
+   width: 20%;
+   margin: 40px;
+   padding: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.input-text {
+    width: 100%; /* Full width for inputs */
+    height: 37px; /* Consistent height */
+    margin-bottom: 15px; /* Space between elements */
+    padding: 5px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.login-btn {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius : 4px; /* Rounded corners */
+    padding: 10px 20px; /* Spacious padding */
+    font-size: 16px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.login-btn:hover {
+    background-color: #0069d9; /* Darker primary color on hover */
+}
